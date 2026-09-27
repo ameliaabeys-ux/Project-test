@@ -36,13 +36,6 @@ android {
             keyAlias = "upload"
             keyPassword = System.getenv("KEY_PASSWORD")
         }
-
-        create("debugConfig") {
-            storeFile = file("${rootDir}/debug.keystore")
-            storePassword = "android"
-            keyAlias = "androiddebugkey"
-            keyPassword = "android"
-        }
     }
 
     buildTypes {
@@ -60,8 +53,9 @@ android {
             signingConfig = signingConfigs.getByName("release")
         }
 
+        // Debug APK uses Android's default debug keystore automatically.
+        // No custom debug.keystore is required.
         debug {
-            signingConfig = signingConfigs.getByName("debugConfig")
         }
     }
 
@@ -94,68 +88,147 @@ secrets {
 }
 
 dependencies {
+
+    // =========================
     // Compose
+    // =========================
+
     implementation(platform(libs.androidx.compose.bom))
+
     implementation(libs.androidx.activity.compose)
+
     implementation(libs.androidx.compose.material.icons.core)
     implementation(libs.androidx.compose.material.icons.extended)
+
     implementation(libs.androidx.compose.material3)
+
     implementation(libs.androidx.compose.ui)
     implementation(libs.androidx.compose.ui.graphics)
     implementation(libs.androidx.compose.ui.tooling.preview)
 
+
+    // =========================
     // AndroidX
+    // =========================
+
     implementation(libs.androidx.core.ktx)
+
     implementation(libs.androidx.lifecycle.runtime.compose)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.lifecycle.viewmodel.compose)
 
+
+    // =========================
     // Room
+    // =========================
+
     implementation(libs.androidx.room.ktx)
     implementation(libs.androidx.room.runtime)
 
-    // Image loading
+
+    // =========================
+    // Image Loading
+    // =========================
+
     implementation(libs.coil.compose)
 
+
+    // =========================
     // Networking
+    // =========================
+
     implementation(libs.converter.moshi)
     implementation(libs.retrofit)
     implementation(libs.okhttp)
     implementation(libs.logging.interceptor)
 
+
+    // =========================
     // JSON
+    // =========================
+
     implementation(libs.moshi.kotlin)
 
+
+    // =========================
     // Firebase
+    // =========================
+
     implementation(platform(libs.firebase.bom))
+
     implementation(libs.firebase.ai)
+
     implementation(libs.firebase.appcheck.recaptcha)
     implementation(libs.firebase.appcheck.debug)
 
+
+    // =========================
     // Coroutines
+    // =========================
+
     implementation(libs.kotlinx.coroutines.android)
     implementation(libs.kotlinx.coroutines.core)
 
-    // Tests
+
+    // =========================
+    // Unit Tests
+    // =========================
+
     testImplementation(libs.androidx.compose.ui.test.junit4)
+
     testImplementation(libs.androidx.core)
     testImplementation(libs.androidx.junit)
+
     testImplementation(libs.junit)
+
     testImplementation(libs.kotlinx.coroutines.test)
+
     testImplementation(libs.robolectric)
 
-    // Android tests
-    androidTestImplementation(platform(libs.androidx.compose.bom))
-    androidTestImplementation(libs.androidx.compose.ui.test.junit4)
-    androidTestImplementation(libs.androidx.espresso.core)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.runner)
 
+    // =========================
+    // Android Tests
+    // =========================
+
+    androidTestImplementation(
+        platform(libs.androidx.compose.bom)
+    )
+
+    androidTestImplementation(
+        libs.androidx.compose.ui.test.junit4
+    )
+
+    androidTestImplementation(
+        libs.androidx.espresso.core
+    )
+
+    androidTestImplementation(
+        libs.androidx.junit
+    )
+
+    androidTestImplementation(
+        libs.androidx.runner
+    )
+
+
+    // =========================
     // Debug
-    debugImplementation(libs.androidx.compose.ui.test.manifest)
-    debugImplementation(libs.androidx.compose.ui.tooling)
+    // =========================
 
+    debugImplementation(
+        libs.androidx.compose.ui.test.manifest
+    )
+
+    debugImplementation(
+        libs.androidx.compose.ui.tooling
+    )
+
+
+    // =========================
     // KSP
+    // =========================
+
     ksp(libs.androidx.room.compiler)
+
     ksp(libs.moshi.kotlin.codegen)
 }

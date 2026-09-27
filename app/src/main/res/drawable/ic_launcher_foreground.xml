@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Steam / Aroma swirls -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#E6D3C0"
+        android:strokeWidth="3.2"
+        android:strokeLineCap="round"
+        android:pathData="M44,30 C41,25 45,21 44,17" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#DFC0A0"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:pathData="M54,28 C51,22 56,18 54,14" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#E6D3C0"
+        android:strokeWidth="3.2"
+        android:strokeLineCap="round"
+        android:pathData="M64,30 C61,25 65,21 64,17" />
+
+    <!-- Coffee Cup Body -->
+    <path
+        android:fillColor="#F3E8DB"
+        android:pathData="M27,37 L81,37 C81,37 79,72 54,72 C29,72 27,37 27,37 Z" />
+
+    <!-- Cup Rim Highlight -->
+    <path
+        android:fillColor="#E2CFBA"
+        android:pathData="M25,36 L83,36 C84.1,36 85,36.9 85,38 C85,39.1 84.1,40 83,40 L25,40 C23.9,40 23,39.1 23,38 C23,36.9 23.9,36 25,36 Z" />
+
+    <!-- Cup Handle -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#F3E8DB"
+        android:strokeWidth="5"
+        android:strokeLineCap="round"
+        android:pathData="M78,43 C87,43 89,58 75,61" />
+
+    <!-- Latte Art Heart inside cup -->
+    <path
+        android:fillColor="#A8582C"
+        android:pathData="M54,63 C54,63 43,54 43,48 C43,44.5 45.8,42 49,42 C51,42 53,43 54,44.5 C55,43 57,42 59,42 C62.2,42 65,44.5 65,48 C65,54 54,63 54,63 Z" />
+
+    <!-- Saucer plate -->
+    <path
+        android:fillColor="#E2CFBA"
+        android:pathData="M22,76 C22,74.5 24,73 26,73 L82,73 C84,73 86,74.5 86,76 C86,78.5 72,81 54,81 C36,81 22,78.5 22,76 Z" />
+</vector>

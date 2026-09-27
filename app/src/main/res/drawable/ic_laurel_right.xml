@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="36dp"
+    android:height="73dp"
+    android:viewportWidth="36"
+    android:viewportHeight="73">
+    <!-- Main stem curve -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#EDE4D8"
+        android:strokeWidth="1.2"
+        android:strokeLineCap="round"
+        android:pathData="M6,70 C12,62 22,48 22,34 C22,20 14,8 4,3" />
+
+    <!-- Top leaf -->
+    <path
+        android:fillColor="#EDE4D8"
+        android:pathData="M4,3 C4,3 9,2 10,6 C11,10 6,8 4,3 Z" />
+
+    <!-- Outer leaves along curve -->
+    <path
+        android:fillColor="#EDE4D8"
+        android:pathData="M12,10 C15,8 21,11 21,15 C21,18 16,16 12,10 Z" />
+    <path
+        android:fillColor="#EDE4D8"
+        android:pathData="M18,20 C22,18 28,23 27,28 C26,31 21,27 18,20 Z" />
+    <path
+        android:fillColor="#EDE4D8"
+        android:pathData="M22,32 C27,31 32,37 30,43 C28,45 23,39 22,32 Z" />
+    <path
+        android:fillColor="#EDE4D8"
+        android:pathData="M20,46 C24,47 28,54 25,60 C23,62 19,54 20,46 Z" />
+    <path
+        android:fillColor="#EDE4D8"
+        android:pathData="M14,59 C18,62 19,69 15,72 C13,73 11,66 14,59 Z" />
+
+    <!-- Inner leaves -->
+    <path
+        android:fillColor="#EDE4D8"
+        android:pathData="M9,15 C8,12 2,12 1,16 C1,19 6,19 9,15 Z" />
+    <path
+        android:fillColor="#EDE4D8"
+        android:pathData="M16,25 C13,23 6,25 6,29 C6,32 12,31 16,25 Z" />
+    <path
+        android:fillColor="#EDE4D8"
+        android:pathData="M19,37 C16,36 9,40 10,45 C11,48 16,44 19,37 Z" />
+    <path
+        android:fillColor="#EDE4D8"
+        android:pathData="M18,50 C15,51 10,57 12,62 C13,64 17,58 18,50 Z" />
+</vector>

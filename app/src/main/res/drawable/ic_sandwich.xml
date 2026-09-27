@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="84dp"
+    android:height="84dp"
+    android:viewportWidth="84"
+    android:viewportHeight="84">
+    <!-- Top bread crust -->
+    <path
+        android:fillColor="#C6894E"
+        android:pathData="M18,34 C24,24 60,24 66,34 C67,36 65,38 62,38 L22,38 C19,38 17,36 18,34 Z" />
+    <path
+        android:fillColor="#E3B37D"
+        android:pathData="M20,34 C25,27 59,27 64,34 L20,34 Z" />
+
+    <!-- Greens / lettuce -->
+    <path
+        android:fillColor="#6B8E23"
+        android:pathData="M16,40 C19,38 22,41 26,39 C30,41 34,38 38,40 C42,38 46,41 50,39 C54,41 58,38 62,40 C66,38 68,40 68,41 C67,43 64,43 61,42 C57,43 53,41 49,43 C45,41 41,43 37,41 C33,43 29,41 25,43 C21,41 17,43 16,40 Z" />
+
+    <!-- Tomato slices -->
+    <path
+        android:fillColor="#C0392B"
+        android:pathData="M24,43 L38,43 C39,45 37,47 35,47 L27,47 C25,47 23,45 24,43 Z" />
+    <path
+        android:fillColor="#D9534F"
+        android:pathData="M44,43 L58,43 C59,45 57,47 55,47 L47,47 C45,47 43,45 44,43 Z" />
+
+    <!-- Cheese melt -->
+    <path
+        android:fillColor="#F1C40F"
+        android:pathData="M20,47 L64,47 L62,50 L48,53 L38,49 L28,52 L20,47 Z" />
+
+    <!-- Bottom bread slice -->
+    <path
+        android:fillColor="#B5793F"
+        android:pathData="M20,52 L64,52 C66,52 67,54 65,56 C61,62 23,62 19,56 C17,54 18,52 20,52 Z" />
+</vector>

@@ -1,0 +1,6 @@
+{
+  "name": "Coffee Profile",
+  "description": "Dark warm-toned coffee profile screen with glassmorphic elements, video hero, stats, and achievements.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

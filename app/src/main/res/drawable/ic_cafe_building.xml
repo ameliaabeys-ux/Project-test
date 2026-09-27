@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="84dp"
+    android:height="84dp"
+    android:viewportWidth="84"
+    android:viewportHeight="84">
+    <!-- Awning stripes -->
+    <path
+        android:fillColor="#8C4426"
+        android:pathData="M20,24 L64,24 L68,36 L16,36 Z" />
+    <path
+        android:fillColor="#E8CDB5"
+        android:pathData="M24,24 L30,24 L29,36 L22,36 Z" />
+    <path
+        android:fillColor="#E8CDB5"
+        android:pathData="M38,24 L44,24 L45,36 L39,36 Z" />
+    <path
+        android:fillColor="#E8CDB5"
+        android:pathData="M52,24 L58,24 L60,36 L54,36 Z" />
+
+    <!-- Awning scallops -->
+    <path
+        android:fillColor="#72341A"
+        android:pathData="M16,36 C16,38 18,39 21,39 C24,39 26,38 27,36 C28,38 30,39 33,39 C36,39 38,38 39,36 C40,38 42,39 45,39 C48,39 50,38 51,36 C52,38 54,39 57,39 C60,39 62,38 63,36 C64,38 66,39 68,38 L68,36 Z" />
+
+    <!-- Building facade -->
+    <path
+        android:fillColor="#2D150D"
+        android:strokeColor="#562E1B"
+        android:strokeWidth="1.5"
+        android:pathData="M20,38 L64,38 L64,66 L20,66 Z" />
+
+    <!-- Shop Window -->
+    <path
+        android:fillColor="#4A2518"
+        android:strokeColor="#743C25"
+        android:strokeWidth="1"
+        android:pathData="M24,44 L40,44 L40,58 L24,58 Z" />
+    <!-- Window glare / coffee cup inside -->
+    <path
+        android:fillColor="#E0B995"
+        android:pathData="M30,51 L34,51 C34,54 30,54 30,51 Z" />
+
+    <!-- Door -->
+    <path
+        android:fillColor="#3D1C10"
+        android:strokeColor="#743C25"
+        android:strokeWidth="1"
+        android:pathData="M46,44 L58,44 L58,66 L46,66 Z" />
+    <!-- Door handle -->
+    <path
+        android:fillColor="#E8C38E"
+        android:pathData="M48,54 C48.5,54 49,54.5 49,55 C49,55.5 48.5,56 48,56 C47.5,56 47,55.5 47,55 C47,54.5 47.5,54 48,54 Z" />
+
+    <!-- Signboard -->
+    <path
+        android:fillColor="#E8C38E"
+        android:pathData="M36,18 L48,18 L48,22 L36,22 Z" />
+</vector>
